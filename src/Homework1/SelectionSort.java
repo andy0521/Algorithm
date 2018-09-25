@@ -3,6 +3,8 @@ package Homework1;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.xml.crypto.Data;
+
 public class SelectionSort {
 	int data[] = { 10, 60, 5, 78, 12, 23 };
 
@@ -23,15 +25,19 @@ public class SelectionSort {
 
 	}
 	void changedata() {
-		int tmp;
+	
 		for (int i=0;i<data.length;i++) {
-			for (int j=i+1;j<data.length;j++) {
-				if(data[i]<data[j]) {
-				tmp=data[i];
-				data[i]=data [j];
-				data[j]=tmp;
+			int min=i;
+			for (int j=i+1;j<=data.length-1;j++) {
+				if(data[min]>data[j]) {
+				min=j;
+				
 				}
+				
 			}
+			int temp =data[i];
+			data[i]=data[min];
+			data[min]=temp;
 			System.out.print("第"+(i+1)+"次排序");
 			for (int k=0;k<data.length;k++) {
 				System.out.print(data[k]+" ");

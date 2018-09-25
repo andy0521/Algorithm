@@ -27,7 +27,7 @@ public class BinarySearch {
 		Scanner sc1 = new Scanner(System.in);
 		 int search=sc1.nextInt();
 		 int mid=(start+end)/2;
-		while ( data[mid]!=num&&num!=-1){
+		while ( num!=-1){
 			mid=(start+end)/2;
 		 if(search==data[mid]) {
 			 System.out.println("找到了，在第"+(mid+1)+"格找到"+search);

@@ -26,7 +26,7 @@ public class SelectionSort {
 	}
 	void changedata() {
 	
-		for (int i=0;i<data.length;i++) {
+		for (int i=0;i<data.length-1;i++) {
 			int min=i;
 			for (int j=i+1;j<=data.length-1;j++) {
 				if(data[min]>data[j]) {

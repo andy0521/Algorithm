@@ -1,4 +1,4 @@
-package Homework1;
+package HW2;
 
 import java.util.Scanner;
 
@@ -16,9 +16,7 @@ for (int i=1;i<=num;i++) {
 }
 System.out.println(num+"!="+j);
 	}
-
-	public static void main(String[] args) {
-		return
-	}
-
 }
+	
+
+
